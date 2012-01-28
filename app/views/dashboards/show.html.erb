@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @dashboard.name %>
+</p>
+
+<p>
+  <b>Module name:</b>
+  <%= @dashboard.module_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_dashboard_path(@dashboard) %> |
+<%= link_to 'Back', dashboards_path %>
