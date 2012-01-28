@@ -1,3 +1,70 @@
 // Place all the styles related to the Dashboards controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.widget { 
+	position: relative;
+	height:300px;
+	width: 300px; 
+	overflow: hidden;
+	border: thin red solid;	
+	float: left;
+}
+
+.widget_header {
+	background-color: cornflower;
+	text-align: center;
+	height: 20px;
+}
+
+.widget_content {
+	background-color: moccasin;	
+	overflow: hidden;
+	border: thin blue solid;
+}
+
+.content {
+	background-color: darksalmon;
+	max-height: 100%;	
+}
+
+
+.center {
+	text-align: center;
+}
+
+.corner {
+	color: ivory;	
+	z-index:100;
+	position: absolute;
+	max-width: 50%;
+	max-height: 50%;
+	overflow: hidden;
+}
+
+.top_right {
+	background-color: darkred;
+	top:0;
+	right:0;
+	text-align:right;
+}
+
+.top_left {
+	background-color: darkgreen;
+	top:0;
+	left:0;
+	text-align:left;		
+}
+
+.bottom_left {
+	background-color: gold;
+	bottom:0;
+	left:0;
+	text-align:left;
+}
+
+.bottom_right {
+	background-color: darkblue;
+	bottom:0;
+	right:0;
+	text-align:right;
+}
