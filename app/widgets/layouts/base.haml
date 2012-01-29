@@ -2,3 +2,9 @@
 	.widget_header I am a header for #{@name}
 	.widget_content
 		=yield
+	
+	:javascript
+		$('##{widget_id} .content').bind('contentchanged', function(){
+			// do something after the div content has changed
+			centerize("#{widget_id}");
+		})

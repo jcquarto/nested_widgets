@@ -1,7 +1,7 @@
-class Base::ChildWidget < Apotomo::Widget
+class Base::ChildWidget < BaseWidget
 
   def display
-    super
+    super  
   end
 
 end

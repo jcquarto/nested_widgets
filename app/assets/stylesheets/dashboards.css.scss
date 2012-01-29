@@ -3,33 +3,36 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .widget { 
 	position: relative;
-	height:300px;
-	width: 300px; 
+	height:220px;
+	width: 220px; 
 	overflow: hidden;
 	border: thin red solid;	
 	float: left;
+	color: #eee; background-color: #333;
 }
 
 .widget_header {
-	background-color: cornflower;
 	text-align: center;
 	height: 20px;
 }
 
 .widget_content {
-	background-color: moccasin;	
 	overflow: hidden;
 	border: thin blue solid;
 }
 
 .content {
-	background-color: darksalmon;
 	max-height: 100%;	
 }
 
 
 .center {
 	text-align: center;
+}
+.transparent {
+	zoom: 1;
+	filter: alpha(opacity=1);
+	opacity: 0.01;
 }
 
 .corner {

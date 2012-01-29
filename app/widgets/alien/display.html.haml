@@ -1,7 +1,13 @@
 %div{:class=>"content center"}
-	I am #{@name}
+	-#=render :view => :initial
+	=image_tag( 'ajax-loader.gif')
 	
 %div{:class=>"top_right corner transparent"}TR
 %div{:class=>"top_left corner transparent"}TL
 %div{:class=>"bottom_right corner transparent"}BR
 %div{:class=>"bottom_left corner transparent"}BL
+
+:javascript
+	$(document).ready(function(){
+		$.get( "#{url_for_event(:ready)} ")
+	});
